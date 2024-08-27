@@ -1,0 +1,234 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Landing Page Styles */
+.landing-header {
+  background: url('landing-bg.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.landing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.landing-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.landing-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ff6347;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e55342;
+}
+
+/* SNP Agency Inspired Styles */
+.snp-style {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.snp-style h2 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 150px 20px;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero .cta-button {
+  background-color: #ff6347;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2em;
+}
+
+.hero .cta-button:hover {
+  background-color: #e55342;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 30%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-info {
+  opacity: 1;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact button {
+  background-color: #ff6347;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #e55342;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
